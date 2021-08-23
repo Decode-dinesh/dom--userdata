@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contents">
+
+        <section class="create">
+            <h1>Add New User</h1>
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input class="username" type="text" placeholder=" Enter username">
+            </div>
+            <label for="profile_photo">Upload</label>
+            <input class="add-avatar" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+            <button onclick="addUser()">Add user</button>
+        </section>
+
+        <section class="modify">
+            <div class="form-popup" id="myForm">
+                <form class="form-container">
+                    <h1>EDIT</h1>
+
+                    <label for="email"><b>Name</b></label>
+                    <input class="editUse" type="text" placeholder="Enter name">
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+
+        </section>
+    </div>
+
+
+    <section class="user-list"></section>
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
